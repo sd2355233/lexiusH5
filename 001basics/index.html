@@ -12,9 +12,27 @@
         html{
             height: 100%;
         }
+        @keyframes mymove
+        {
+            from {left:100px;}
+            to {left:600px;}
+        }
+        h1{
+            background-color: red;
+            position:relative;
+            animation: mymove 5s infinite;
+        }
+        p{
+            background-color: blue;
+            position: relative;
+            animation: mymove 5s infinite;
+        }
     </style>
 </head>
 <body>
+<audio controls="controls" autoplay="autoplay">
+    <source src="./bgm/bgm.mp3" type="audio/mpeg" />
+</audio>
 <h1>静夜思</h1>
 <p>床前明月光，</p>
 <p>疑是地上霜；</p>
